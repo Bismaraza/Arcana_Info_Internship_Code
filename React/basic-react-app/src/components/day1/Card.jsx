@@ -8,9 +8,6 @@ function Card() {
       <p className="text-gray-700 mt-3">
         Learn React & Tailwind CSS
       </p>
-       <p className="text-gray-700 mt-3">
-        Learn React & Tailwind CSS
-      </p>
 
       <button className="bg-blue-700 text-white px-5 py-2 rounded-lg mt-5 hover:bg-blue-800 shadow-sm">
         Learn More

@@ -1,57 +1,19 @@
-// import Heading from "./components/Heading";
-// import Button from "./components/Button";
-// import Card from "./components/Card";
-// import Profile from "./components/Profile";
-
-
-// function App() {
-//   return (
-//     <div className="min-h-screen p-10 text-gray-900 bg-white ">
-
-//       <Heading />
-
-//       <div className="mt-10">
-//         <Button />
-//       </div>
-
-//       <div className="flex justify-center mt-10">
-//         <Card />
-//       </div>
-
-//       <div className="flex justify-center mt-10">
-//         <Profile />
-//       </div>
-
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-// // Portfolio
-// import Portfolio from "./components/Portfolio";
-
-// function App() {
-//   return <Portfolio />;
-// }
-
-// export default App;
-
-// Day 2 tasks
-
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+import Day1App from "./components/day1/App";
+import Day2App from "./components/day2/App";
+import PropsApp from "./components/day2/props/App";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Footer />
-    </>
-  );
+  const activeDay = "props";
+
+  if (activeDay === "day1") {
+    return <Day1App />;
+  }
+
+  if (activeDay === "props") {
+    return <PropsApp />;
+  }
+
+  return <Day2App />;
 }
 
 export default App;

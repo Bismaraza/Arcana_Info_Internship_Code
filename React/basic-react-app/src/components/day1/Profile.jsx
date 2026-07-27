@@ -1,4 +1,4 @@
-import profile from "../assets/Bisma.png";
+import profile from "../../assets/Bisma.png";
 
 function Profile() {
   return (
