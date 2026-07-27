@@ -1,9 +1,9 @@
-import profile from "../../assets/Bisma.png";
+import profile from "../../../assets/Bisma.png";
 
 function Hero() {
   return (
     <section className="min-h-screen bg-gray-100 flex justify-center items-center px-4 py-10">
-      <div className="bg-white w-full max-w-[500px] p-8 rounded-2xl shadow-xl text-center">
+      <div className="bg-white w-full max-w-125 p-8 rounded-2xl shadow-xl text-center">
 
         <img
           src={profile}
