@@ -7,6 +7,7 @@ function PropsApp() {
         <ProductCard name="Laptop" price={700} brand="Dell" />
         <ProductCard name="Phone" price={400} brand="Samsung" />
         <ProductCard name="Headphones" price={80} brand="Sony" />
+        <ProductCard name="Mobile" price={80} brand="Sony" />
       </div>
     </div>
   );
