@@ -1,4 +1,4 @@
-function StudentCard({ name, age, GPA }) {
+function StudentCard({ name, age, GPA, department }) {
   return (
     <div className="w-72 p-6 bg-white rounded-xl shadow-lg border border-gray-200">
 
@@ -12,6 +12,10 @@ function StudentCard({ name, age, GPA }) {
 
       <p className="text-gray-700">
         GPA: {GPA}
+      </p>
+
+      <p className="text-gray-700">
+        Department: {department}
       </p>
 
     </div>
