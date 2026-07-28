@@ -5,10 +5,11 @@ import CardApp from "./components/day2/team_members/App";
 import ConditionalApp from "./components/day3/conditional/App";
 import FormStyling from "./components/day3/form/FormStyling";
 import MapApp from "./components/day4/map/App";
-import LivePreview from "./components/day3/form/LivePreview"
-
+import LivePreview from "./components/day3/form/LivePreview";
+import ToggleTheme from "./components/day3/form/Changemode";
+import LoginForm from "./components/day3/form/LoginForm"
 function App() {
-  const activeDay = "LivePreview";
+  const activeDay = "LoginForm";
 
   if (activeDay === "day1") {
     return <Day1App />;
@@ -38,12 +39,19 @@ function App() {
     return <MapApp />;
   }
 
-    if (activeDay === "LivePreview") {
+  if (activeDay === "LivePreview") {
     return <LivePreview />;
   }
 
-  return <PortfolioApp />;
+  if (activeDay === "ToggleTheme") {
+    return <ToggleTheme />;
+  }
 
+  if (activeDay === "LoginForm") {
+    return <LoginForm />;
+  }
+
+  return <PortfolioApp />;
 }
 
 export default App;
