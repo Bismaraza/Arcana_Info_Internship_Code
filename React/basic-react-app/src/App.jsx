@@ -12,8 +12,10 @@ import LivePreview from "./components/day3/form/LivePreview";
 import ToggleTheme from "./components/day3/form/Changemode";
 import LoginForm from "./components/day3/form/LoginForm";
 import EmployeeDirectory from "./components/day4/directory/EmployeeDirectory";
+import StudentDashboard from "./components/day5/StudentDashboard"
+
 function App() {
-  const activeDay = "EmployeeDirectory";
+  const activeDay = "StudentDashboard";
 
   if (activeDay === "day1") {
     return <Day1App />;
@@ -80,6 +82,10 @@ function App() {
 
     if (activeDay === "EmployeeDirectory") {
     return <EmployeeDirectory />;
+  }
+
+      if (activeDay === "StudentDashboard") {
+    return <StudentDashboard />;
   }
 
   return <PortfolioApp />;
