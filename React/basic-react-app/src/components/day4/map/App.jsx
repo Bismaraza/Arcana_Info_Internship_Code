@@ -1,4 +1,4 @@
-import StudentCard from "./student";
+import StudentCard from "./Student";
 
 function MapApp() {
   const students = [

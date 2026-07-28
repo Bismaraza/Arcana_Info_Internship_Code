@@ -2,10 +2,12 @@ import Day1App from "./components/day1/App";
 import PropsApp from "./components/day2/props/App";
 import PortfolioApp from "./components/day2/portfolio/App";
 import CardApp from "./components/day2/team_members/App";
-import MapApp from "./components/day3/map/App";
+import ConditionalApp from "./components/day3/conditional/App";
+import FormStyling from "./components/day3/form/FormStyling";
+import MapApp from "./components/day4/map/App";
 
 function App() {
-  const activeDay = "StudentCard";
+  const activeDay = "form";
 
   if (activeDay === "day1") {
     return <Day1App />;
@@ -18,11 +20,22 @@ function App() {
   if (activeDay === "portfolio") {
     return <PortfolioApp />;
   }
-  if(activeDay ==="team_members"){
-    return <CardApp /> }
 
-    if(activeDay ==="StudentCard"){
-    return <MapApp /> }
+  if (activeDay === "team_members") {
+    return <CardApp />;
+  }
+
+  if (activeDay === "conditional") {
+    return <ConditionalApp />;
+  }
+
+  if (activeDay === "form") {
+    return <FormStyling />;
+  }
+
+  if (activeDay === "map") {
+    return <MapApp />;
+  }
 
   return <PortfolioApp />;
 
