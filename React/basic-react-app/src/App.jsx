@@ -5,11 +5,15 @@ import CardApp from "./components/day2/team_members/App";
 import ConditionalApp from "./components/day3/conditional/App";
 import FormStyling from "./components/day3/form/FormStyling";
 import MapApp from "./components/day4/map/App";
+import StatusApp from "./components/day4/badges/StatusApp";
+import StudentList from "./components/day4/student/StudentList";
+import StudentCard from "./components/day4/student/StudentCard";
 import LivePreview from "./components/day3/form/LivePreview";
 import ToggleTheme from "./components/day3/form/Changemode";
-import LoginForm from "./components/day3/form/LoginForm"
+import LoginForm from "./components/day3/form/LoginForm";
+import EmployeeDirectory from "./components/day4/directory/EmployeeDirectory";
 function App() {
-  const activeDay = "LoginForm";
+  const activeDay = "EmployeeDirectory";
 
   if (activeDay === "day1") {
     return <Day1App />;
@@ -39,6 +43,25 @@ function App() {
     return <MapApp />;
   }
 
+  if (activeDay === "StudentList") {
+    return <StudentList />;
+  }
+
+  if (activeDay === "StudentCard") {
+    return (
+      <div className="min-h-screen bg-gray-100 p-8">
+        <h1 className="text-4xl font-bold text-center mb-8">Student Card</h1>
+        <div className="max-w-md mx-auto">
+          <StudentCard
+            name="Bisma Raza"
+            department="Computer Science"
+            GPA={3.9}
+          />
+        </div>
+      </div>
+    );
+  }
+
   if (activeDay === "LivePreview") {
     return <LivePreview />;
   }
@@ -47,8 +70,16 @@ function App() {
     return <ToggleTheme />;
   }
 
+  if (activeDay === "StatusApp") {
+    return <StatusApp />;
+  }
+
   if (activeDay === "LoginForm") {
     return <LoginForm />;
+  }
+
+    if (activeDay === "EmployeeDirectory") {
+    return <EmployeeDirectory />;
   }
 
   return <PortfolioApp />;
